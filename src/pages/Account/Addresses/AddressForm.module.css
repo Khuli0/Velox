@@ -1,0 +1,36 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  max-width: 480px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--fs-heading-md);
+  text-transform: uppercase;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  gap: var(--space-4);
+}
+
+.rowMain {
+  grid-column: 1;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--fs-body-sm);
+  color: var(--text-secondary);
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}

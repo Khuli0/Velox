@@ -1,0 +1,94 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  max-width: 720px;
+}
+
+.title {
+  font-size: var(--fs-display-md);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  border: 1px solid var(--border-subtle);
+  padding: var(--space-6);
+}
+
+.sectionLabel {
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  letter-spacing: var(--ls-wider);
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.textarea {
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  padding: var(--space-3);
+  font-size: var(--fs-body-sm);
+  font-family: var(--font-body);
+  resize: vertical;
+}
+.textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.select {
+  background: var(--color-black-soft);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  padding: var(--space-3);
+  font-size: var(--fs-body-sm);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+.checkboxRow {
+  display: flex;
+  gap: var(--space-5);
+  flex-wrap: wrap;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--fs-body-sm);
+  color: var(--text-secondary);
+}
+
+.notice {
+  font-size: var(--fs-body-sm);
+  color: var(--text-secondary);
+  border: 1px dashed var(--border-subtle);
+  padding: var(--space-4);
+}

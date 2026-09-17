@@ -1,0 +1,20 @@
+.page {
+  padding-top: calc(76px + var(--space-7));
+  padding-bottom: var(--space-11);
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-4);
+  margin-bottom: var(--space-7);
+}
+
+.title {
+  font-size: var(--fs-display-md);
+}
+
+.count {
+  color: var(--text-secondary);
+  font-size: var(--fs-body-sm);
+}

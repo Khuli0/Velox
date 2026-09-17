@@ -1,0 +1,68 @@
+.panel {
+  position: fixed;
+  inset: 0;
+  z-index: calc(var(--z-header) - 1);
+  background: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: calc(76px + var(--space-6)) var(--container-pad) var(--space-8);
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform var(--dur-slow) var(--ease-sharp), opacity var(--dur-base) var(--ease-sharp);
+  visibility: hidden;
+}
+
+.panelOpen {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.link {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 10vw, 3rem);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  line-height: 1.05;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity var(--dur-base) var(--ease-out), transform var(--dur-base) var(--ease-out);
+}
+
+.panelOpen .link {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.saleLink {
+  color: var(--color-sale);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  border-top: 1px solid var(--border-subtle);
+  padding-top: var(--space-6);
+}
+
+.secondaryLink {
+  font-size: var(--fs-body-md);
+  color: var(--text-secondary);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+}
+
+.adminLink {
+  font-size: var(--fs-body-md);
+  color: var(--color-accent);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+}

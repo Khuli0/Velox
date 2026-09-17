@@ -1,0 +1,20 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: var(--color-white);
+  background: rgba(10, 10, 11, 0.5);
+  backdrop-filter: blur(4px);
+  border-radius: var(--radius-full);
+  transition: transform var(--dur-instant) var(--ease-sharp), color var(--dur-fast) var(--ease-sharp);
+}
+
+.button:hover {
+  transform: scale(1.08);
+}
+
+.active {
+  color: var(--color-accent);
+}

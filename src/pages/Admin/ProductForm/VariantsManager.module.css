@@ -1,0 +1,116 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  border: 1px solid var(--border-subtle);
+  padding: var(--space-6);
+}
+
+.sectionLabel {
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  letter-spacing: var(--ls-wider);
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-subtle);
+}
+
+.tableHeader,
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 90px 120px;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-3);
+}
+
+.tableHeader {
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.row {
+  font-size: var(--fs-body-sm);
+  border-bottom: 1px solid var(--border-subtle);
+}
+.row:last-child {
+  border-bottom: none;
+}
+
+.sku {
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+}
+
+.stockInput {
+  background: var(--color-black-soft);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  padding: var(--space-1) var(--space-2);
+  width: 64px;
+  font-size: var(--fs-body-sm);
+  font-family: var(--font-mono);
+}
+.stockInput:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.rowActions {
+  display: flex;
+  gap: var(--space-3);
+  font-size: var(--fs-micro);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+}
+
+.save {
+  color: var(--color-accent);
+}
+.save:hover {
+  color: var(--color-off-white);
+}
+
+.remove {
+  color: var(--text-secondary);
+}
+.remove:hover {
+  color: var(--color-sale);
+}
+
+.addForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 80px auto;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  .addForm {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.addInput,
+.addInputSmall {
+  background: var(--color-black-soft);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  padding: var(--space-2);
+  font-size: var(--fs-body-sm);
+}
+.addInput:focus,
+.addInputSmall:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}

@@ -1,0 +1,86 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  border: 1px solid var(--border-subtle);
+  padding: var(--space-6);
+}
+
+.sectionLabel {
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  letter-spacing: var(--ls-wider);
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: var(--space-3);
+}
+
+.imageCard {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  background: var(--color-ink);
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mainBadge {
+  position: absolute;
+  bottom: var(--space-2);
+  left: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  background: var(--color-accent);
+  color: var(--color-white);
+  padding: 2px 6px;
+}
+
+.removeButton {
+  position: absolute;
+  top: var(--space-2);
+  right: var(--space-2);
+  width: 22px;
+  height: 22px;
+  background: rgba(10, 10, 11, 0.7);
+  color: var(--color-white);
+  font-size: 0.7rem;
+  border-radius: var(--radius-full);
+}
+.removeButton:hover {
+  background: var(--color-sale);
+}
+
+.dropzone {
+  border: 1px dashed var(--border-subtle);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  transition: border-color var(--dur-fast) var(--ease-sharp), background var(--dur-fast) var(--ease-sharp);
+}
+
+.dropzoneActive {
+  border-color: var(--color-accent);
+  background: rgba(43, 92, 255, 0.06);
+}
+
+.dropzoneText {
+  font-size: var(--fs-body-sm);
+  color: var(--text-secondary);
+}
+
+.fileInput {
+  display: none;
+}

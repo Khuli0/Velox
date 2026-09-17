@@ -1,0 +1,126 @@
+:root {
+  /* ---------------------------------------------------------
+     COLOR
+     Preto / off-white / cinza como base neutra.
+     Azul elétrico como único acento — usado com moderação.
+  --------------------------------------------------------- */
+  --color-black: #0a0a0b;
+  --color-black-soft: #121214;
+  --color-ink: #1a1a1d;
+  --color-graphite: #2c2c30;
+  --color-steel: #1c1c1e;
+  --color-ash: #8a8a90;
+  --color-mist: #c4c4c8;
+  --color-off-white: #f2f1ec;
+  --color-white: #fcfcfa;
+
+  --color-accent: #00ccff;
+  --color-accent-dim: #1c3fb0;
+  --color-accent-glow: rgba(43, 92, 255, 0.35);
+
+  --color-sale: #ff3b3b;
+  --color-success: #2fbf71;
+
+  /* Surface roles */
+  --surface-primary: var(--color-black);
+  --surface-secondary: var(--color-black-soft);
+  --surface-inverse: var(--color-off-white);
+  --text-primary: var(--color-off-white);
+  --text-secondary: var(--color-ash);
+  --text-inverse: var(--color-black);
+  --border-subtle: rgba(242, 241, 236, 0.12);
+  --border-strong: rgba(242, 241, 236, 0.28);
+
+  /* ---------------------------------------------------------
+     TYPOGRAPHY
+  --------------------------------------------------------- */
+  --font-display: 'Big Shoulders Display', 'Arial Narrow', sans-serif;
+  --font-body: 'Manrope', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --fs-display-xl: clamp(3.2rem, 10vw + 2svh, 8rem);
+  --fs-display-lg: clamp(2.4rem, 10vw, 5.2rem);
+  --fs-display-md: clamp(1.8rem, 10vw, 3rem);
+  --fs-heading-lg: clamp(1.5rem, 10vw, 2.2rem);
+  --fs-heading-md: 1.375rem;
+  --fs-heading-sm: 1.125rem;
+  --fs-body-lg: 1.125rem;
+  --fs-body-md: 1rem;
+  --fs-body-sm: 0.875rem;
+  --fs-label: 0.75rem;
+  --fs-micro: 0.6875rem;
+
+  --lh-tight: 0.94;
+  --lh-snug: 1.15;
+  --lh-normal: 1.5;
+
+  --ls-tight: -0.02em;
+  --ls-normal: 0;
+  --ls-wide: 0.08em;
+  --ls-wider: 0.16em;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-black: 900;
+
+  /* ---------------------------------------------------------
+     SPACING (base-8 scale + editorial extremes)
+  --------------------------------------------------------- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+  --space-11: 11rem;
+
+  --container-max: 1600px;
+  --container-pad: clamp(1.25rem, 4vw, 4rem);
+
+  /* ---------------------------------------------------------
+     RADIUS / BORDERS
+     Marca esportiva premium = quase reto, quinas quadradas.
+  --------------------------------------------------------- */
+  --radius-none: 0;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-full: 999px;
+  --border-width: 1px;
+
+  /* ---------------------------------------------------------
+     MOTION
+  --------------------------------------------------------- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-sharp: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --dur-instant: 120ms;
+  --dur-fast: 220ms;
+  --dur-base: 380ms;
+  --dur-slow: 620ms;
+  --dur-cinematic: 1100ms;
+
+  /* ---------------------------------------------------------
+     SHADOW / DEPTH
+  --------------------------------------------------------- */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.24);
+  --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.55);
+  --shadow-accent: 0 0 0 1px var(--color-accent), 0 8px 24px var(--color-accent-glow);
+
+  /* ---------------------------------------------------------
+     Z-INDEX SCALE
+  --------------------------------------------------------- */
+  --z-header: 100;
+  --z-overlay: 200;
+  --z-drawer: 210;
+  --z-modal: 220;
+  --z-toast: 230;
+  --z-splash: 500;
+}

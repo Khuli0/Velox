@@ -1,0 +1,12 @@
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionSpacing {
+  margin-top: var(--space-11);
+}
+
+.sectionSpacing:first-of-type {
+  margin-top: var(--space-9);
+}

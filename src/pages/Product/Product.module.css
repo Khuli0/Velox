@@ -1,0 +1,38 @@
+.page {
+  padding-top: calc(76px + var(--space-6));
+  padding-bottom: var(--space-11);
+}
+
+.statusPage {
+  padding-top: calc(76px + var(--space-9));
+  padding-bottom: var(--space-9);
+}
+
+.breadcrumb {
+  font-size: var(--fs-micro);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-6);
+}
+.breadcrumb a:hover {
+  color: var(--text-primary);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+}
+
+@media (min-width: 900px) {
+  .layout {
+    grid-template-columns: 1.4fr 1fr;
+    gap: var(--space-9);
+  }
+}
+
+.backLink {
+  font-size: var(--fs-label);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-wide);
+  border-bottom: 1px solid var(--color-off-white);
+}

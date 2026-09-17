@@ -1,0 +1,78 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 720px;
+}
+
+.orderCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  border: 1px solid var(--border-subtle);
+  padding: var(--space-5);
+  transition: border-color var(--dur-fast) var(--ease-sharp);
+}
+.orderCard:hover {
+  border-color: var(--border-strong);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.orderNumber {
+  font-family: var(--font-mono);
+  font-size: var(--fs-body-sm);
+}
+
+.status {
+  font-size: var(--fs-micro);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border: 1px solid var(--border-subtle);
+}
+
+.status_delivered {
+  color: var(--color-success);
+  border-color: var(--color-success);
+}
+.status_shipped,
+.status_processing {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+.status_cancelled {
+  color: var(--color-sale);
+  border-color: var(--color-sale);
+}
+
+.items {
+  font-size: var(--fs-body-sm);
+  color: var(--text-secondary);
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--space-2);
+}
+
+.date {
+  font-size: var(--fs-micro);
+  color: var(--text-secondary);
+}
+
+.total {
+  font-weight: var(--fw-semibold);
+}
+
+.shopLink {
+  font-size: var(--fs-label);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--color-off-white);
+}

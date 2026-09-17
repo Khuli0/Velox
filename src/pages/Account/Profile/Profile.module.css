@@ -1,0 +1,92 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-width: 640px;
+}
+
+.card {
+  border: 1px solid var(--border-subtle);
+  padding: var(--space-6);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardLabel {
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  letter-spacing: var(--ls-wider);
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+  margin-top: var(--space-4);
+}
+
+.infoLabel {
+  display: block;
+  font-size: var(--fs-micro);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-1);
+}
+
+.infoValue {
+  font-size: var(--fs-body-md);
+}
+
+.viewAll {
+  font-size: var(--fs-body-sm);
+  color: var(--text-secondary);
+}
+.viewAll:hover {
+  color: var(--text-primary);
+}
+
+.orderRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--space-4);
+}
+
+.orderNumber {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--fs-body-sm);
+}
+
+.orderStatus {
+  display: block;
+  font-size: var(--fs-micro);
+  color: var(--text-secondary);
+  text-transform: capitalize;
+  margin-top: var(--space-1);
+}
+
+.orderTotal {
+  font-weight: var(--fw-semibold);
+}
+
+.quickLinks {
+  display: flex;
+  gap: var(--space-5);
+}
+
+.quickLink {
+  font-size: var(--fs-body-sm);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: var(--space-1);
+}
+.quickLink:hover {
+  border-color: var(--color-off-white);
+}

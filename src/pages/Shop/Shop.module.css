@@ -1,0 +1,74 @@
+.page {
+  padding-top: calc(76px + var(--space-8));
+  padding-bottom: var(--space-11);
+}
+
+.header {
+  margin-bottom: var(--space-6);
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  letter-spacing: var(--ls-wider);
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.title {
+  font-size: var(--fs-display-lg);
+  margin-top: var(--space-2);
+}
+
+.titleSale {
+  composes: title;
+  color: var(--color-sale);
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: var(--space-4);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: var(--space-7);
+}
+
+.filterButton {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--fs-label);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  border: 1px solid var(--border-subtle);
+  padding: var(--space-2) var(--space-4);
+  transition: border-color var(--dur-fast) var(--ease-sharp), color var(--dur-fast) var(--ease-sharp);
+}
+.filterButton:hover {
+  border-color: var(--color-off-white);
+}
+
+.filterCount {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 3px;
+  border-radius: var(--radius-full);
+  background: var(--color-accent);
+  color: var(--color-white);
+  font-size: 10px;
+  font-family: var(--font-mono);
+}
+
+.resultCount {
+  font-size: var(--fs-body-sm);
+  color: var(--text-secondary);
+}
+
+.results {
+  width: 100%;
+}
